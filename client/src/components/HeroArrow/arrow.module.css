@@ -1,0 +1,22 @@
+.hero__arrow {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero__arrow > img {
+  width: 70px;
+  margin: 4em 0 0 0;
+  animation: animatArrow 2s linear infinite;
+}
+@keyframes animatArrow {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,65 @@
+.user_page {
+  padding: 30px;
+}
+.btn__go_back {
+  width: 68px;
+  height: 36px;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--background-color);
+  box-shadow: var(--box-shadow);
+}
+.btn__go_back > button {
+  color: var(--color-text) !important;
+}
+.user_page__content {
+  margin-top: 2rem;
+}
+.user_page__content__title {
+  font-size: var(--font30px);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.favourites_data {
+  display: flex;
+  flex-direction: column;
+  background: var(--background-color);
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: -2px 4px 25px rgba(0, 0, 0, 0.1);
+  border: var(--border-radius-card);
+}
+
+.data_map__arabicLanguage {
+  font-size: 23px;
+  margin-top: 2rem;
+  line-height: 45px;
+}
+.data_map__meaning {
+  margin-top: 2rem;
+}
+.data_map__rusLanguange {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+@media (max-width: 576px) {
+  .favourites_data {
+    width: 80%;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    background: var(--background-color);
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: -2px 4px 25px rgba(0, 0, 0, 0.1);
+    border: var(--border-radius-card);
+  }
+}

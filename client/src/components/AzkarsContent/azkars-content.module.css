@@ -1,0 +1,67 @@
+.morning_banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.morning_banner__span {
+  color: var(--color-text);
+  font-size: 30px;
+  margin-bottom: 3rem;
+}
+.data_map {
+  display: flex;
+  flex-direction: column;
+  background: var(--background-color);
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+
+  border-radius: 6px;
+  box-shadow: -2px 4px 25px rgba(0, 0, 0, 0.1);
+  border: var(--border-radius-card);
+}
+.data_map__title {
+}
+.data_map__arabicLanguage {
+  font-size: 23px;
+  margin-top: 2rem;
+  line-height: 45px;
+}
+.data_map__meaning {
+  margin-top: 2rem;
+}
+.data_map__rusLanguange {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+audio::-webkit-media-controls-panel {
+  background-color: var(--background-color);
+}
+audio::-webkit-media-controls-current-time-display {
+  color: var(--color-text);
+}
+audio::-webkit-media-controls-time-remaining-display {
+  color: var(--color-text);
+}
+.btn__go_back {
+  width: 68px;
+  height: 36px;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--background-color);
+  box-shadow: var(--box-shadow);
+  margin: 20px 0 0 20px;
+}
+.btn__go_back > button {
+  color: var(--color-text) !important;
+}
+
+@media (max-width: 576px) {
+  .data_map {
+    width: 80%;
+  }
+}

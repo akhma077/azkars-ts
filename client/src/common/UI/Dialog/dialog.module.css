@@ -1,0 +1,23 @@
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.modal__content {
+  padding: 20px;
+  border-radius: 12px;
+  width: 100vw;
+  height: 80vh;
+  overflow-y: auto;
+  transform: scale(0.8);
+  transition: 0.8s all;
+  color: var(--color-text);
+  line-height: 24px;
+}

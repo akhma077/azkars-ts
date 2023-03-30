@@ -1,0 +1,95 @@
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  background: var(--background-color);
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+.form__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80vw;
+  height: 100vh;
+  margin-bottom: 10px;
+}
+.form__content__div {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 12px;
+}
+.login__logo {
+  width: 95px;
+  height: 85px;
+}
+.link {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--color-text);
+  text-decoration: none;
+  margin-left: 12px;
+}
+.form__content__title {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 24px;
+  color: var(--color-text);
+  margin-bottom: 12px;
+}
+
+.form__content__text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #868686;
+}
+.btn_next {
+  box-sizing: border-box;
+  width: 200px;
+  height: 40px;
+  background: #f6f8ff;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn_next > button {
+  color: black;
+}
+.text {
+  color: #dc3545;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 150%;
+  max-width: 410px;
+  margin-top: 1rem;
+  text-align: center;
+}
+.show_pass {
+  width: 100%;
+  position: static;
+}
+.show_pass__div {
+  visibility: hidden;
+}
+@media (max-width: 576px) {
+  .show_pass {
+    position: relative;
+    width: 100% !important;
+  }
+  .show_pass__div {
+    position: absolute;
+    top: 27%;
+    right: 20px;
+    visibility: visible;
+  }
+}

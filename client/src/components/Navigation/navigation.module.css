@@ -1,0 +1,166 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+.navigation__modal_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  text-transform: lowercase;
+}
+
+.morning_azkars_page {
+  /* background-image: url("https://pibig.info/uploads/posts/2022-01/thumbs/1643032571_10-pibig-info-p-rassvet-v-gorakh-priroda-krasivo-foto-11.jpg"); */
+  background-image: url("https://azkar.ru/img/categories/morning.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 40vw;
+  height: 330px;
+  border-radius: var(--img-border-radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.enening_page {
+  background-image: url("https://i.pinimg.com/originals/65/55/5d/65555d93d21d7722b1706122a596b874.jpg");
+  width: 40vw;
+  height: 330px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  border-radius: var(--img-border-radius);
+}
+.after_page {
+  background-image: url("https://azkar.ru/img/categories/other2.png");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  border-radius: var(--img-border-radius);
+  width: 40vw;
+  height: 330px;
+}
+.important_page {
+  background-image: url("https://assets.pikiran-rakyat.com/crop/0x0:0x0/x/photo/2022/07/02/677101754.jpeg");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  border-radius: var(--img-border-rad2us);
+  width: 40vw;
+  height: 330px;
+  border-radius: var(--img-border-radius);
+}
+.newModalStyles {
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  border-radius: var(--img-border-rad2us);
+  width: 40vw;
+  height: 330px;
+  border-radius: var(--img-border-radius);
+}
+.morning_azkars_page__span {
+  font-size: var(--font32px);
+  font-weight: 900;
+  color: white;
+  transition-property: all;
+  transition: all ease 400ms;
+}
+
+.navigation__first_section {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.navigation__second_section {
+  display: flex;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__div_text {
+  visibility: hidden;
+}
+.disc {
+  font-size: var(--font32px);
+}
+[data-tooltip]::after {
+  content: attr(data-tooltip);
+  width: 300px;
+  left: 0;
+  top: 0;
+  color: #2a6e3f;
+  pointer-events: none;
+  opacity: 0;
+  transition: 0.3s;
+  font-size: 16px;
+  font-weight: bold;
+}
+[data-tooltip]:hover::after {
+  opacity: 1;
+}
+
+.morning_azkars_page__span:hover {
+  padding-bottom: 100px;
+}
+@media (min-width: 768px) {
+  .navigation__first_section {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 576px) {
+  .navigation__modal_btn {
+    visibility: visible;
+    box-shadow: -2px 4px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 2rem;
+    height: 40px;
+    width: 80vw;
+    padding: 10px;
+  }
+  .navigation__first_section {
+    flex-direction: column;
+    margin-right: 10px;
+  }
+
+  .navigation__second_section {
+    flex-direction: column;
+    margin-right: 10px;
+  }
+  .morning_azkars_page {
+    height: 305px;
+    margin-bottom: 20px;
+    width: 90vw;
+  }
+  .enening_page {
+    height: 305px;
+    width: 90vw;
+  }
+  .after_page {
+    height: 305px;
+    width: 90vw;
+    margin-top: 20px;
+  }
+  .important_page {
+    height: 305px;
+    width: 90vw;
+  }
+  .newModalStyles {
+    height: 305px;
+    width: 90vw;
+  }
+}

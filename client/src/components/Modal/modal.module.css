@@ -1,0 +1,79 @@
+.modal {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  background: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+.modal__content {
+  width: 60vw;
+  height: 100vh;
+  box-shadow: -2px 4px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  animation-duration: 0.4s;
+}
+.meni_items_styles {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.theme_icons__BsFillBrightnessHighFill {
+  height: 25px;
+  width: 25px;
+}
+.theme_icons__BsFillMoonStarsFill {
+  height: 20px;
+  width: 20px;
+}
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+.list_items {
+  list-style: none;
+  margin-top: 4rem;
+}
+.list_items > li {
+  font-size: var(--font35px);
+  padding: 10px;
+  cursor: pointer;
+}
+
+.logout {
+  font-size: var(--font35px);
+  padding: 0px 10px;
+}
+.userProfileLink {
+  font-size: var(--font35px);
+  padding: 0 10px 10px 10px;
+}
